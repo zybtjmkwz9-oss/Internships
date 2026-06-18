@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Your Name</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <img class="avatar" src="https://via.placeholder.com/160" alt="Your photo">
+      <div>
+        <h2>Hi — I'm Your Name</h2>
+        <p class="lead">I build things for the web. I'm a student/developer looking for internship and full-time opportunities.</p>
+        <p>
+          Location • University/Company • Role
+        </p>
+        <p>
+          <a class="cta" href="#contact">Get in touch</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About me</h3>
+      <p>Write a short paragraph about yourself here — your interests, the technologies you like, and what kind of roles you're looking for. Keep it concise and focused for recruiters.</p>
+
+      <h4>Skills</h4>
+      <ul class="skills">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React / Vue / Svelte</li>
+        <li>Node.js</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Selected projects</h3>
+      <div class="project-grid">
+        <article class="project-card" data-title="Project One" data-desc="A short description of project one. Mention tech used and your role." data-link="#">
+          <img src="https://via.placeholder.com/400x200" alt="Project One screenshot">
+          <h4>Project One</h4>
+          <p>Short summary.</p>
+          <button class="btn details">View details</button>
+        </article>
+
+        <article class="project-card" data-title="Project Two" data-desc="A short description of project two. Mention tech used and your role." data-link="#">
+          <img src="https://via.placeholder.com/400x200" alt="Project Two screenshot">
+          <h4>Project Two</h4>
+          <p>Short summary.</p>
+          <button class="btn details">View details</button>
+        </article>
+
+        <article class="project-card" data-title="Project Three" data-desc="A short description of project three. Mention tech used and your role." data-link="#">
+          <img src="https://via.placeholder.com/400x200" alt="Project Three screenshot">
+          <h4>Project Three</h4>
+          <p>Short summary.</p>
+          <button class="btn details">View details</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like to reach out, email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect on <a href="#">LinkedIn</a> / <a href="#">GitHub</a>.</p>
+      <form class="contact-form" action="mailto:your.email@example.com" method="get" enctype="text/plain">
+        <label for="message">Short message (optional)</label>
+        <textarea id="message" rows="4" placeholder="Hi — I'm reaching out about..."> </textarea>
+        <button class="btn" type="submit">Send email</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-modal" class="close">×</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p><a id="modal-link" href="#" target="_blank" rel="noopener">Open project</a></p>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
